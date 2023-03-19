@@ -1,6 +1,9 @@
 .footer {
   width: 32.4rem;
-  margin: 0 auto;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .footer__description {
@@ -16,6 +19,7 @@
 .footer__menu {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2.5rem;
 }
 
 .footer__link {
@@ -26,12 +30,9 @@
 }
 
 .footer__line {
-  position: absolute;
-  bottom: .8rem;
-  left: 50%;
-  transform: translate(-50%);
+  margin: 0 auto;
   background-color: var(--text-color);
   width: 13.5rem;
-  height: .5rem;
-  border-radius: .25rem;
+  height: 0.5rem;
+  border-radius: 0.25rem;
 }

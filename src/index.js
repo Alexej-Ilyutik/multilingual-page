@@ -5,6 +5,7 @@ import { createURL } from './modules/createURL';
 import { renderHeader } from './modules/renderHeader';
 import { renderMain } from './modules/renderMain';
 import { renderFooter } from './modules/renderFooter';
+import { changeSizeFonts } from './modules/changeSizeFonts';
 import en from './localizations/en.json';
 import es from './localizations/es.json';
 import fr from './localizations/fr.json';
@@ -25,8 +26,7 @@ const PRICE_MONTH = '$ 9.99';
 const PRICE_YEAR = '$ 19.99';
 const PRICE_DISCOUNT = '$ 1.66';
 
-// const languageArr = ['en', 'es', 'fr', 'ja', 'nl', 'ru', 'zh'];
-const languageArr = ['en', 'es', 'fr', 'ja', 'nl', 'zh'];
+const languageArr = ['en', 'es', 'fr', 'ja', 'nl', 'ru', 'zh'];
 
 let userLanguage = window.navigator
   ? window.navigator.language ||
@@ -149,3 +149,8 @@ PRICE_CONTAINER.forEach((el) => {
     }
   });
 });
+
+
+const MAIN_TITLE = document.querySelector('.main__title');
+
+changeSizeFonts(MAIN_TITLE);

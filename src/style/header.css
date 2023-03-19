@@ -7,6 +7,12 @@
   align-items: center;
 }
 
+@media screen and (max-height: 770px) {
+  .header {
+    margin-bottom: 5.5rem;
+  }
+}
+
 .header__close {
   width: 2.4rem;
   height: 2.4rem;

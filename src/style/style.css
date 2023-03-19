@@ -9,6 +9,7 @@
 
 body {
   height: 100vh;
+  min-height: 81rem;
   background-image: url('../assets/background-full/4.png');
   background-position: center;
   background-repeat: no-repeat;
