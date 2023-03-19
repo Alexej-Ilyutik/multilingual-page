@@ -8,6 +8,20 @@ export const renderMain = function (
   text
 ) {
   const templateVariableRe = /\{\{(.*?)\}\}/g;
+  const exportToClouds = data['Export to clouds']
+    ? `
+    <div class="description">
+      <div class="description__img">
+        <img src="${exportArrow}" alt="export">
+      </div>
+      <div class="description__text">
+        ${data['Export to clouds']}
+      </div>
+    </div>`
+    : '';
+
+    console.log(priceYear);
+
   return `
       <h1 class="main__title">
         ${data['Unlimited Access<br>to All Features']}
@@ -21,14 +35,7 @@ export const renderMain = function (
              ${data['Unlimited documents']}
           </div>
         </div>
-        <div class="description">
-          <div class="description__img">
-            <img src="${exportArrow}" alt="export">
-          </div>
-          <div class="description__text">
-             ${data['Export to clouds']}
-          </div>
-        </div>
+        ${exportToClouds}
         <div class="description">
           <div class="description__img">
             <img src="${text}" alt="text recognition">
@@ -38,6 +45,7 @@ export const renderMain = function (
           </div>
         </div>
       </div>
+      
       <div class="main__price">
         <div class="price price-active">
           <h3 class="price__title">${data['Monthly']}</h3>
@@ -50,8 +58,9 @@ export const renderMain = function (
             priceMonth
           )}</div>
         </div>
+        
         <div class="price price__action">
-          <div class="price__discount"></div> 
+          <div class="price__discount">${data['-83%']}</div> 
           <h3 class="price__title">${data['Annually']}</h3>
           <div class="price__value">${data[
             '<strong>{{price}}</strong><br>per year'
@@ -62,7 +71,9 @@ export const renderMain = function (
             priceMonthDiscount
           )}</div>
         </div>
+
+        
       </div>
-      <a class="btn" href="#" >${data['Continue']}</a>
+      <a class="btn link" href="#" >${data['Continue']}</a>
 `;
 };

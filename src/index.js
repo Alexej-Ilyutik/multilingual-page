@@ -20,9 +20,9 @@ const HEADER = document.querySelector('.header');
 const MAIN = document.querySelector('.main');
 const FOOTER = document.querySelector('.footer');
 
-const PRICE_MONTH = 9.99;
-const PRICE_YEAR = 19.99;
-const PRICE_DISCOUNT = 1.66;
+const PRICE_MONTH = '$ 9.99';
+const PRICE_YEAR = '$ 19.99';
+const PRICE_DISCOUNT = '$ 1.66';
 
 // const languageArr = ['en', 'es', 'fr', 'ja', 'nl', 'ru', 'zh'];
 const languageArr = ['en', 'es', 'fr', 'ja', 'nl', 'zh'];
