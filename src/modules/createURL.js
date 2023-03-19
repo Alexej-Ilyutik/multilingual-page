@@ -1,4 +1,4 @@
-export const updateURL = function (lang) {
+export const createURL = function (lang) {
   if (history.pushState) {
     const baseUrl =
       window.location.protocol +
