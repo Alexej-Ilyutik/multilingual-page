@@ -1,0 +1,156 @@
+.main__title {
+  padding-left: 4.3rem;
+  padding-right: 4.6rem;
+  margin-bottom: 3.6rem;
+  font-size: 3.6rem;
+  text-align: center;
+  height: 8.4rem;
+  overflow-y: auto;
+}
+
+@media screen and (max-height: 770px) {
+ .main__title {
+  margin-bottom: 2.5rem;
+}
+}
+
+.main__description {
+  width: 21rem;
+  margin: 0 auto 4rem auto;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.9rem;
+}
+
+.description:first-child .description__img {
+  width: 2.6rem;
+  height: 1.5rem;
+  margin-right: 0.6rem;
+}
+
+.description:nth-child(2) .description__img {
+  width: 2rem;
+  height: 2.2rem;
+  margin-right: 1.2rem;
+}
+
+.description:last-child .description__img {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-right: 1rem;
+}
+
+.description__text {
+  font-size: 1.7rem;
+  font-family: var(--secondary-font-family);
+  letter-spacing: -0.32px;
+}
+
+.main__price {
+  position: absolute;
+  bottom: 14.5rem;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 29.7rem;
+  margin: 0 auto 1.8rem auto;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 14.5rem;
+  height: 17.8rem;
+  background-image: url('../assets/shape-1.svg');
+  background-size: cover;
+  padding-top: 2.8rem;
+  padding-bottom: 1.4rem;
+  transform: scale(0.9);
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+
+.price__action {
+  background-image: url('../assets/shape-2.svg');
+  position: relative;
+}
+
+.price-active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.price__title {
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+  margin-bottom: 2.2rem;
+}
+
+.price__value strong {
+  font-size: 2.4rem;
+  line-height: 1.5rem;
+}
+
+.price__value {
+  font-family: var(--font-family-SF-Regular);
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.price__description {
+  width: 15rem;
+  height: 2.2rem;
+  background-color: var(--secondary-color);
+  font-family: var(--font-family-SF-Heavy);
+  font-size: 1.55rem;
+  line-height: 2.2rem;
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+
+.price__value-repeat {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-family: var(--font-family-SF-Regular);
+}
+
+.price__discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  background-color: #db0000;
+  font-family: var(--font-family-SF-Heavy);
+  font-size: 1.1rem;
+  line-height: 3.4rem;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 28rem;
+  height: 5.4rem;
+  position: absolute;
+  bottom: 9.2rem;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(
+    90deg,
+    var(--secondary-btn-color) 0%,
+    var(--btn-color) 100%
+  );
+  border-radius: 2.7rem;
+  font-family: var(--font-family-SF-Regular);
+  font-size: 1.7rem;
+  line-height: 5.4rem;
+  text-align: center;
+}

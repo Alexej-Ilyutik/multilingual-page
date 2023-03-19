@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  padding: 4rem 2rem 0 2rem;
+  margin-bottom: 15.5rem;
+  min-height: 2.4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-height: 770px) {
+  .header {
+    margin-bottom: 5.5rem;
+  }
+}
+
+.header__close {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.menu__link {
+  font-size: 1.3rem;
+  color: var(--secondary-text-color);
+  font-weight: 300;
+  letter-spacing: -0.22px;
+  font-family: var(--secondary-font-family);
+}

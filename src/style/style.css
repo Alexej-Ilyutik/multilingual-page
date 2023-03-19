@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'SF-Pro-Display_Bold';
+  font-size: 62.5%;
+  color: var(--text-color);
+}
+
+body {
+  height: 100vh;
+  min-height: 81rem;
+  background-image: url('../assets/background-full/4.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.link{
+  text-decoration: none; 
+}
