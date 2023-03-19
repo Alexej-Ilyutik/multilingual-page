@@ -16,7 +16,8 @@ const HEADER = document.querySelector('.header');
 const MAIN = document.querySelector('.main');
 const FOOTER = document.querySelector('.footer');
 
-const languageArr = ['en', 'es', 'fr', 'ja', 'nl', 'ru', 'zh'];
+// const languageArr = ['en', 'es', 'fr', 'ja', 'nl', 'ru', 'zh'];
+const languageArr = ['en', 'es', 'fr', 'ja', 'nl', 'zh'];
 
 let userLanguage = window.navigator
   ? window.navigator.language ||

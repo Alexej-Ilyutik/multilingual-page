@@ -1,6 +1,5 @@
 export const renderHeader = function (data, img) {
   return `
-    <div class="header__container">
       <div class="header__close">
         <a class="close__link link" href="#">
           <img src="${img}" alt="close">
@@ -11,6 +10,5 @@ export const renderHeader = function (data, img) {
           ${data['Restore']}
         </a>
       </div>
-    </div>
 `;
 };

@@ -1,11 +1,7 @@
 :root {
-  --bg-color: #fee2b3;
-  --bg-second: #fbedd2;
-  --main-txt-color: #1f459f;
-  --main-txt-bg: #abb6c7c3;
-  --secondary-color: rgba(255, 255, 255, 0.35);
-  --text-color: #313437;
-  --footer-bg: #45526e;
-  --buttons-color: #fdbc0c;
-  --text-basic: #000000;
+  --text-color: #ffffff;
+  --secondary-text-color: #ffffff99;
+  --btn-color: #1987FF;
+  --secondary-btn-color: #19CCFF;
+  --secondary-font-family: 'SF-Pro-Text_Regular';
 }
