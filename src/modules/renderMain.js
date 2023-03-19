@@ -20,8 +20,6 @@ export const renderMain = function (
     </div>`
     : '';
 
-    console.log(priceYear);
-
   return `
       <h1 class="main__title">
         ${data['Unlimited Access<br>to All Features']}
@@ -47,7 +45,7 @@ export const renderMain = function (
       </div>
       
       <div class="main__price">
-        <div class="price price-active">
+        <div class="price price-active card1">
           <h3 class="price__title">${data['Monthly']}</h3>
           <div class="price__value">${data[
             '<strong>{{price}}</strong><br>per month'
@@ -59,7 +57,7 @@ export const renderMain = function (
           )}</div>
         </div>
         
-        <div class="price price__action">
+        <div class="price price__action card2">
           <div class="price__discount">${data['-83%']}</div> 
           <h3 class="price__title">${data['Annually']}</h3>
           <div class="price__value">${data[
@@ -74,6 +72,6 @@ export const renderMain = function (
 
         
       </div>
-      <a class="btn link" href="#" >${data['Continue']}</a>
+      <a class="btn link" href="https://apple.com/" >${data['Continue']}</a>
 `;
 };

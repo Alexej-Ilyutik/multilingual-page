@@ -66,6 +66,7 @@
   padding-bottom: 1.4rem;
   transform: scale(0.9);
   opacity: 0.6;
+  transition: all .5s ease;
 }
 
 .price__action {

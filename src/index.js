@@ -134,3 +134,18 @@ switch (currentLang) {
     );
     FOOTER.innerHTML = renderFooter(en);
 }
+
+const PRICE_CONTAINER = document.querySelectorAll('.price');
+const BTN = document.querySelector('.btn');
+
+PRICE_CONTAINER.forEach((el) => {
+  el.addEventListener('click', function (e) {
+    PRICE_CONTAINER.forEach((el) => el.classList.remove('price-active'));
+    this.classList.add('price-active');
+    if (this.closest('.card1')) {
+      BTN.setAttribute('href', 'https://apple.com/');
+    } else {
+      BTN.setAttribute('href', 'https://google.com/');
+    }
+  });
+});
