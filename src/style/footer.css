@@ -1,0 +1,37 @@
+.footer {
+  width: 32.4rem;
+  margin: 0 auto;
+}
+
+.footer__description {
+  font-family: var(--font-family-Roboto);
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  text-align: center;
+  margin-bottom: 1.6rem;
+  opacity: 0.5;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__link {
+  font-family: var(--font-family-Roboto);
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  color: var(--footer-text-color);
+}
+
+.footer__line {
+  position: absolute;
+  bottom: .8rem;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--text-color);
+  width: 13.5rem;
+  height: .5rem;
+  border-radius: .25rem;
+}

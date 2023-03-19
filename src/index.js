@@ -4,6 +4,7 @@ import './index.css';
 import { createURL } from './modules/createURL';
 import { renderHeader } from './modules/renderHeader';
 import { renderMain } from './modules/renderMain';
+import { renderFooter } from './modules/renderFooter';
 import en from './localizations/en.json';
 import es from './localizations/es.json';
 import fr from './localizations/fr.json';
@@ -53,6 +54,7 @@ switch (currentLang) {
       exportArrow,
       textImg
     );
+    FOOTER.innerHTML = renderFooter(es);
     break;
   case 'fr':
     HEADER.innerHTML = renderHeader(fr, closeImg);
@@ -65,6 +67,7 @@ switch (currentLang) {
       exportArrow,
       textImg
     );
+    FOOTER.innerHTML = renderFooter(fr);
     break;
   case 'ja':
     HEADER.innerHTML = renderHeader(ja, closeImg);
@@ -77,6 +80,7 @@ switch (currentLang) {
       exportArrow,
       textImg
     );
+    FOOTER.innerHTML = renderFooter(ja);
     break;
   case 'nl':
     HEADER.innerHTML = renderHeader(nl, closeImg);
@@ -89,6 +93,7 @@ switch (currentLang) {
       exportArrow,
       textImg
     );
+    FOOTER.innerHTML = renderFooter(nl);
     break;
   case 'ru':
     HEADER.innerHTML = renderHeader(ru, closeImg);
@@ -101,6 +106,7 @@ switch (currentLang) {
       exportArrow,
       textImg
     );
+    FOOTER.innerHTML = renderFooter(ru);
     break;
   case 'zh':
     HEADER.innerHTML = renderHeader(zh, closeImg);
@@ -113,6 +119,7 @@ switch (currentLang) {
       exportArrow,
       textImg
     );
+    FOOTER.innerHTML = renderFooter(zh);
     break;
   default:
     HEADER.innerHTML = renderHeader(en, closeImg);
@@ -125,23 +132,5 @@ switch (currentLang) {
       exportArrow,
       textImg
     );
+    FOOTER.innerHTML = renderFooter(en);
 }
-
-// function templ(data, priceMonth, priceYear) {
-//   const templateVariableRe = /\{\{(.*?)\}\}/g;
-//   return `
-//     <div>${data['Count mode']}</div>
-//     <h1>${data['Unlimited Access<br>to All Features']}</h1>
-//     <h5>${data['{{price}}/month'].replace(
-//       templateVariableRe,
-//       priceMonth
-//     )}</h5>`;
-// }
-
-// x.innerHTML = templ(en, 85);
-
-// const templateVariableRe = /\{\{(.*?)\}\}/g;
-// const template = 'some template with {{ variable }} with anotherVariable';
-// console.log(template.replace(templateVariableRe, '355'));
-
-console.log(currentLang);
